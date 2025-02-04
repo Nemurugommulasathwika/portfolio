@@ -1,0 +1,320 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #E1D9F0; /* Soft lilac background */
+    color: #000; /* Set default text color to black */
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Home Section */
+.home {
+    background: #E1D9F0; /* Soft lilac background */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    color: #6A1B9A;
+    font-family: Bold;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* About Section */
+.about {
+    background-color: #E1D9F0;
+    text-align: left;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6A1B9A;
+    flex: 1;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    flex: 2;
+    margin-left: 30px;
+    color: #000;
+}
+
+/* Experience Section */
+.experience {
+    background-color: #E1D9F0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.experience h2 {
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.experience p {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6A1B9A;
+}
+
+.experience-date {
+    font-size: 1rem;
+    color: #555;
+    text-align: right;
+}
+
+
+/* Experience Cards */
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-card {
+    width: 80%;
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.exp-btn {
+    background-color: #6A1B9A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.exp-btn:hover {
+    background-color: #4A148C;
+}
+
+/* Hidden Content Styles (Initially Hidden) */
+.exp-details {
+    display: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #000;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+/* Active Style for Exp Button */
+.exp-btn.active {
+    background-color: #4A148C;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #E1D9F0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    color: #000;
+    border-left: 5px solid #6A1B9A;
+    margin: 5px 0;
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+    background-color: #D1C4E9;
+}
+
+/* Education Section */
+.education {
+    background-color: #E1D9F0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education h2 {
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.education li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    color: #000;
+    border-left: 5px solid #6A1B9A;
+    margin: 5px 0;
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.education li:hover {
+    transform: translateX(10px);
+    background-color: #D1C4E9;
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #E1D9F0;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact h2, .contact p {
+    color: #6A1B9A;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Adjust based on the width of your other sections */
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto; /* Center align */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
